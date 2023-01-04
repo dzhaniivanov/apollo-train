@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Character from "./pages/Character";
+import Search from "./pages/Search";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/:id",
     element: <Character />,
+  },
+  {
+    path: "/search",
+    element: <Search />,
   },
 ]);
 
